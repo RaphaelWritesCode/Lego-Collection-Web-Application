@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body tabindex="-1">
+    <!-- responsive nav bar -->
+    <%- include('partials/navbar', {page: '/about'}) %>
+
+    <!-- container mx--auto -->
+    <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">About Me</h1>
+
+            <p class="py-6">
+              Here's a little blurb about myself! The desginer &amp; developer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+<!-- responsive grid system using 2 columns-->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="https://people.com/thmb/NvJ1HzuVnfb_RPpvTwVGAYk5v1I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(644x229:646x231)/rafael-nadal-16551e40cb6048f69c33891dda4863b8.jpg"
+            alt="profile"
+          />
+        </div>
+        <div class="prose">
+          <p>
+            My name is Raphael Antioquia, and I'm currently studying at Seneca
+            Polytechnic.
+          </p>
+
+          <p>
+            As a mature student, I bring with me a rich tapestry of experiences.
+            Previously, I dedicated myself to the healthcare industry as a
+            registered nurse specializing in cardiac surgical recovery. Outside
+            the clinical setting and now a full-time student, you'll find me on
+            the tennis court or at the gym, indulging in my passion for weight
+            lifting. Anime and manga are my favorite pastimes, and I'm always
+            immersed in the profound world of self-help books. As you can see my
+            favourite player is Rafael Nadal!
+          </p>
+
+          <p>
+            This semester, I have embarked on an academic journey comprising
+            subjects like OOP, SYD, WEB, and DBS. As I venture deeper into these
+            courses, I'm keen to blend my healthcare background with my newfound
+            knowledge, charting a unique path forward.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
